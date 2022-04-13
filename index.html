@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="calculator">
+      <div class="top">
+        <input type="button" value="C" onClick="clearScreen()" class="clear" />
+        <input
+          type="texr"
+          id="result"
+          class="screen"
+          style="text-align: right"
+        />
+      </div>
+      <div class="keys">
+        <input type="button" value="7" onClick="display(7)" class="button" />
+        <input type="button" value="8" onClick="display(8)" class="button" />
+        <input type="button" value="9" onClick="display(9)" class="button" />
+        <input
+          type="button"
+          value="+"
+          onClick="display('+')"
+          class="operator"
+        />
+        <input type="button" value="4" onClick="display(4)" class="button" />
+        <input type="button" value="5" onClick="display(5)" class="button" />
+        <input type="button" value="6" onClick="display(6)" class="button" />
+        <input
+          type="button"
+          value="-"
+          onClick="display('-')"
+          class="operator"
+        />
+        <input type="button" value="1" onClick="display(1)" class="button" />
+        <input type="button" value="2" onClick="display(2)" class="button" />
+        <input type="button" value="3" onClick="display(3)" class="button" />
+        <input
+          type="button"
+          value="/"
+          onClick="display('/')"
+          class="operator"
+        />
+        <input type="button" value="0" onClick="display(0)" class="button" />
+        <input type="button" value="." onClick="display(2.)" class="button" />
+        <input
+          type="button"
+          value="="
+          onClick="solve('=')"
+          class="button equal-sign"
+        />
+        <input
+          type="button"
+          value="*"
+          onClick="display('*')"
+          class="operator"
+        />
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
